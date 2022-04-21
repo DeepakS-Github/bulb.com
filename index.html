@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On/Off</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lamp">
+            <div class="off">
+                <img src="images/lamp.png" class="off-img">
+                <div id="switch" class="on">
+                    <img src="images/light.png" class="on-img">
+                </div>
+            </div>
+            
+        </div>
+        <div class="right-side">
+            <button  class="on-switch" onclick="switchon()">Switch On</button>
+            <button  class="off-switch" onclick="switchoff()">Switch Off</button>
+        </div>
+    </div>
+
+    <script>
+        var on = document.getElementById("switch");
+        function switchon(){
+            on.style.display = "block";
+        }
+        function switchoff(){
+            on.style.display = "none";
+        }
+
+        
+    </script>
+</body>
+</html>
